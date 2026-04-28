@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.technology{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.technology__subtitle{
+    font-weight: 200;
+    font-size: 32px;
+    color: hsl(212, 6%, 44%);
+}
+.technology__title{
+    font-weight: 600;
+    font-size: 40px;
+    color: hsl(234, 12%, 34%);
+
+}
+.technology__text{
+    font-size: 15px;
+    margin-top: 7px;
+    text-align: center;
+    color: hsl(212, 6%, 44%);
+}
+.technology-cards{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 0px 10px 5px hsl(212, 6%, 44%);
+    margin: 40px 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-supervisor{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.card-builder{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.card-karma{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}.card-calc{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.card__title{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 22px;
+    align-self: flex-start;
+}
+.card__text{
+    color: hsl(212, 6%, 44%);
+    font-weight: 400;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.card img{
+    align-self: flex-end;
+    margin-top: 40px;
+}
