@@ -22,7 +22,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -44,21 +45,39 @@ body{
     color: hsl(212, 6%, 44%);
 }
 .technology-cards{
-    margin: 30px 0;
+    /* margin: 30px 0; */
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
 .card{
-    box-shadow: 0px 10px 5px hsl(212, 6%, 44%);
-    margin: 40px 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    /* margin: 40px 20px; */
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-side{
+    flex: 33%;
+}
+.center{
+    flex: 33%;
+}
+.right-side{
+    flex: 33%;
+}
+
 .card-supervisor{
     border-top: 3px solid hsl(180, 62%, 55%);
 }
@@ -87,4 +106,34 @@ body{
 .card img{
     align-self: flex-end;
     margin-top: 40px;
+}
+
+@media (max-width:767px) {
+    .technology__subtitle{
+        font-size: 20px;
+    }
+    .technology__title{
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    .technology__text{
+        font-size: 12px;
+    }
+    .technology-cards{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+    .left-side,
+    .center,
+    .right-side{
+        width: 100%;
+        flex: none;
+
+    }
+    .card{
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
 }
